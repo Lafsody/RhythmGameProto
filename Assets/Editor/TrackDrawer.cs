@@ -16,7 +16,7 @@ public class TrackDrawer : Editor
 	public void ShowArrayProperty(SerializedProperty list)
     {
 		EditorGUILayout.BeginHorizontal();
-		EditorGUILayout.Foldout(list, GUILayout.ExpandWidth(false));
+		EditorGUILayout.LabelField(new GUIContent("Track " + list.name));
 		EditorGUILayout.PropertyField(list.FindPropertyRelative("Array.size"));
 		EditorGUILayout.EndHorizontal();
 

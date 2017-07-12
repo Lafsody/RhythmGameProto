@@ -6,5 +6,5 @@ using UnityEngine;
 public class Track : ScriptableObject
 {
 	public List<Note> lineA;
-	public Note[] lineB;
+	public List<Note> lineB;
 }
