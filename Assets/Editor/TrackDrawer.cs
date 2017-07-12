@@ -6,11 +6,13 @@ public class TrackDrawer : Editor
 {
 	SerializedProperty lineA;
 	SerializedProperty lineB;
+	SerializedProperty song;
 
 	void OnEnable()
 	{
 		lineA = serializedObject.FindProperty("lineA");
 		lineB = serializedObject.FindProperty("lineB");
+		song = serializedObject.FindProperty("song");
 	}
 
 	public void ShowArrayProperty(SerializedProperty list)
@@ -42,6 +44,8 @@ public class TrackDrawer : Editor
 
 		ShowArrayProperty(lineA);
 		ShowArrayProperty(lineB);
+
+		EditorGUILayout.PropertyField(song, new GUIContent("Song: "));
 
 		serializedObject.ApplyModifiedProperties();
 	}

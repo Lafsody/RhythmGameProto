@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Name: TestTrack
   m_EditorClassIdentifier: 
   lineA:
+  - keyTime: 2
   - keyTime: 3
   - keyTime: 5
+  - keyTime: 6
+  - keyTime: 8
+  - keyTime: 9
+  - keyTime: 11
   lineB:
-  - keyTime: 2
   - keyTime: 4
+  - keyTime: 7
+  - keyTime: 10
+  - keyTime: 12
+  - keyTime: 13
+  song: {fileID: 8300000, guid: 62fa3a9b00a8db34ea06b14c91b1a47c, type: 3}

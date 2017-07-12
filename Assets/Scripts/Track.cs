@@ -7,4 +7,6 @@ public class Track : ScriptableObject
 {
 	public List<Note> lineA;
 	public List<Note> lineB;
+
+	public AudioClip song;
 }
